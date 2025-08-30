@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOLEI Hoodie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="product-details">
+    <img src="https://via.placeholder.com/400x300?text=DOLEI+Hoodie" alt="DOLEI Hoodie">
+    <h2>DOLEI Hoodie</h2>
+    <p>السعر: 25000 IQD</p>
+    <label>اختر القياس:</label>
+    <select id="size">
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+    </select>
+    <label>اختر اللون:</label>
+    <select id="color">
+      <option value="Black">أسود</option>
+      <option value="White">أبيض</option>
+    </select>
+    <button onclick="addToCart('DOLEI Hoodie', 25000, document.getElementById('size').value, document.getElementById('color').value)">🛒 أضف للسلة</button>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

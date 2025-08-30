@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - DOLEI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>DOLEI Cart</h1>
+    <nav>
+      <a href="index.html#shop">Shop</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="cart.html">🛒 Cart</a>
+      <a href="#" onclick="sendOrder()">📲 Send Order</a>
+    </nav>
+  </header>
+
+  <section class="cart">
+    <h2>🛒 Shopping Cart</h2>
+    <div id="cart-list"></div>
+    <div id="cart-total"></div>
+    <button onclick="clearCart()">❌ Clear Cart</button>
+    <button onclick="sendOrder()">📲 Send Order</button>
+  </section>
+
+  <footer>
+    <p>© 2025 DOLEI Store</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

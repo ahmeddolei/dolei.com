@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOLEI Cap</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="product-details">
+    <img src="https://via.placeholder.com/400x300?text=DOLEI+Cap" alt="DOLEI Cap">
+    <h2>DOLEI Cap</h2>
+    <p>السعر: 10000 IQD</p>
+    <label>اختر اللون:</label>
+    <select id="color">
+      <option value="Black">أسود</option>
+      <option value="White">أبيض</option>
+    </select>
+    <button onclick="addToCart('DOLEI Cap', 10000, '', document.getElementById('color').value)">🛒 أضف للسلة</button>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
