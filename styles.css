@@ -1,67 +1,13 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-header {
-  background: black;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-}
-nav a {
-  margin: 0 10px;
-  text-decoration: none;
-  color: white;
-}
-.products {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-}
-.product {
-  border: 1px solid #ccc;
-  padding: 15px;
-  border-radius: 6px;
-}
-#cart {
-  position: fixed;
-  top: 0;
-  right: -100%;
-  width: 300px;
-  height: 100%;
-  background: #f9f9f9;
-  box-shadow: -2px 0 5px rgba(0,0,0,0.2);
-  padding: 20px;
-  transition: right 0.3s;
-  overflow-y: auto;
-}
-#cart.open {
-  right: 0;
-}
-#checkout-form {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-#checkout-form input, 
-#checkout-form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  width: 100%;
-}
-#checkout-form button {
-  background: black;
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 6px;
-  cursor: pointer;
-}
-#checkout-form button:hover {
-  background: #444;
-}
+/* CSS تم شرحه مسبقاً */ 
+body { font-family: "Tahoma", Arial, sans-serif; margin: 0; padding: 0; background: #f8f8f8; color: #333; direction: rtl; }
+h1,h2,h3 { margin: 10px 0; }
+a { text-decoration: none; color: #0077cc; }
+a:hover { text-decoration: underline; }
+header { background: #222; color: #fff; padding: 15px; display: flex; justify-content: space-between; align-items: center; }
+nav a { margin: 0 10px; color: #fff; font-weight: bold; }
+nav a:hover { color: #ffcc00; }
+.products { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
+.product-card { background: #fff; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 15px; text-align: center; transition: transform 0.2s; }
+.product-card:hover { transform: translateY(-5px); }
+.product-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
+footer { background: #222; color: #fff; text-align: center; padding: 15px; margin-top: 30px; }
