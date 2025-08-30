@@ -37,4 +37,3 @@ function sendOrder() {
 }
 
 window.onload = displayCart;
-
